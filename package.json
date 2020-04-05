@@ -1,0 +1,26 @@
+{
+  "name": "wow-loot-logs",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.9.1",
+    "clsx": "latest",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "sql.js": "^1.2.1"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out --dotfiles"
+  },
+  "devDependencies": {
+    "arraybuffer-loader": "^1.0.8",
+    "copy-webpack-plugin": "^5.1.1",
+    "gh-pages": "^2.2.0"
+  }
+}
