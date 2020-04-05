@@ -36560,7 +36560,7 @@ var route_regex_1 = __webpack_require__(/*! ./utils/route-regex */ "./node_modul
 
 function addBasePath(path) {
   // variable is always a string
-  var p = "";
+  var p = "/wow-loot-logs";
   return path.indexOf(p) !== 0 ? p + path : path;
 }
 
@@ -48718,7 +48718,7 @@ function MyApp(props) {
       lineNumber: 29,
       columnNumber: 9
     }
-  }, "My page"), __jsx("meta", {
+  }, "Speedwagon Loot Logs"), __jsx("meta", {
     name: "viewport",
     content: "minimum-scale=1, initial-scale=1, width=device-width",
     __self: this,
@@ -48788,6 +48788,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var debug = true;
 
 var DBService = /*#__PURE__*/function () {
   function DBService() {
@@ -48808,7 +48809,7 @@ var DBService = /*#__PURE__*/function () {
                 // Required to load the wasm binary asynchronously. Of course, you can host it wherever you want
                 // You can omit locateFile completely when running in node
                 locateFile: function locateFile(file) {
-                  return "http://localhost:3000/sql-wasm.wasm";
+                  return debug ? "/sql-wasm.wasm" : "/wow-loot-logs/sql-wasm.wasm";
                 }
               }));
 
