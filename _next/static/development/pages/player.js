@@ -53749,7 +53749,7 @@ function PlayerStats(_ref) {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            result = _services_db__WEBPACK_IMPORTED_MODULE_7__["default"].execQuery("SELECT date,item,note,response,instance,boss FROM lootlogs WHERE player LIKE \"%".concat(playerName, "%\" ORDER BY ").concat(orderBy, " ").concat(order, ";"));
+            result = _services_db__WEBPACK_IMPORTED_MODULE_7__["default"].execQuery("SELECT date,item,note,response,instance,boss FROM lootlogs WHERE player LIKE \"%".concat(playerName, "-%\" ORDER BY ").concat(orderBy, " ").concat(order, ";"));
             setLogsList(result[0]);
 
           case 2:
